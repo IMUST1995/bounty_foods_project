@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="organic natural fruits fresh drinks">
-    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,54 +65,55 @@
         <form 
         method="get"
         >
-            <fieldset>
-                <Legend>Order Now</Legend>
-                <label for="fname">First name*:
-                    <input 
-                        type="text" 
-                        id="fname" 
-                        name="fname" 
-                        pattern="^[A-Za-z]*$"
-                        required
-                        >
-                </label>
-                <label for="email">E-mail*
-                    <input 
-                        id="email"
-                        type="email" 
-                        placeholder="username@email.com"
-                        required>
-                </label>
-                <label for="phone">Enter your phone number*:
-                    <input type="tel" 
-                        id="phone"
-                        name="phone"
-                        minlength="7"
-                        placeholder="720-555-5555"
-                        pattern="[0-9]{10}"
-                        title="Phone number must be ten characters"
-                        required
-                        >
-                </label>
-                <label for="fruits">Choose your fruits (3 suggested)
-                    <select class="fruits" name="fruits" id="fruits" required>
-                        <option value="Select " disabled selected>Select your fruits</option>
-                    </select>
-                </label>
-                <label class="textareaLabel" for="comments">Special Instructions (optional)</label>
-                    <textarea 
-                    id="comments"
-                    name="comments" 
-                    rows="4" 
-                    cols="30"
-                    ></textarea>
-                    <input 
-                    type="hidden" 
-                    name="time" 
-                    id="formDate">
-            </fieldset>
+        <fieldset>
+            <Legend>Order Now</Legend>
+            <label for="fname">First name *:
+                <input 
+                    type="text" 
+                    id="fname" 
+                    name="fname" 
+                    pattern="^[A-Za-z]*$"
+                    required
+                    >
+            </label>
+            <label for="email">E-mail *
+                <input 
+                    id="email"
+                    type="email" 
+                    placeholder="username@email.com"
+                    required>
+            </label>
+            <label for="phone">Enter your phone number *:
+                <input type="tel" 
+                    id="phone"
+                    name="phone"
+                    minlength="7"
+                    placeholder="720-555-5555"
+                    pattern="[0-9]{10}"
+                    title="Phone number must be ten characters"
+                    required
+                    >
+            </label>
+            <label for="fruits">Choose your fruits (3 suggested)
+                <select class="fruits" name="fruits" id="fruits" required>
+                    <option value="" disabled selected>Select your fruits</option>
+                </select>
+            </label>
+            <label class="textareaLabel" for="comments">Special Instructions (optional)</label>
+                <textarea 
+                id="comments"
+                name="comments" 
+                rows="4" 
+                cols="30"
+                ></textarea>
+                <input 
+                type="hidden" 
+                name="time" 
+                id="formDate">
+        </fieldset>
         <input class="formButton" 
                 type='submit'
+                onSubmit="anyAction"
                 value="Order Now!">
         </form>
     </main>

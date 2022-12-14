@@ -127,9 +127,12 @@ function deleteFruitsButton() {
 }
 
 const buttonForm = document.querySelector('.formButton')
-buttonForm.addEventListener('click', createUser)
+/* buttonForm.addEventListener('click', createUser) */
 const form = document.querySelector('form')
-function createUser() {
+form.addEventListener('submit', createUser)
+
+function createUser(e) {
+    e.preventDefault()
     const user = {
         userName: document.querySelector('#fname').value,
         userEmail: document.querySelector('#email').value,
@@ -143,8 +146,6 @@ function createUser() {
 const today = new Date()
 const formDate = document.querySelector('#formDate');
 formDate.value = today.toLocaleString()
-console.log(formDate.value)
-
 
 function showUserInfo(user) {
     const { userName, userEmail, userPhone, userTextArea} = user
@@ -204,5 +205,16 @@ function showUserInfo(user) {
         ordersStorage.push(order)
         localStorage.setItem('drinks', JSON.stringify(ordersStorage))
     }
-    console.log(ordersStorage)
+    createButtonBuyAgain()
+}
+
+function createButtonBuyAgain() {
+    const btnContainer = document.createElement('div')
+    btnContainer.setAttribute('class', 'btnBuyAgainContainer')
+    const btn = document.createElement('a')
+    btn.classList.add('btnOrderAgain')
+    btn.setAttribute('href', 'fresh.html')
+    btn.textContent = 'Order More Fruits'
+    btnContainer.appendChild(btn)
+    mainContainer.append(btnContainer)
 }

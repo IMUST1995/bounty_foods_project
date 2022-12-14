@@ -464,9 +464,6 @@ div.discoverContainer div p{
     line-height: 1.3rem;
 }
 /* ====================Form styles==================== */
-.mainForm{
-    display: grid;
-}
 form{
     grid-column: 1 / 4;
     display: flex;
@@ -708,6 +705,8 @@ div.carousel div img{
     align-items: center;
     justify-content: center;
     color: black;
+    max-height: 432px;
+    overflow-y: auto;
 }
 .ordersContainer > * > *, .ordersContainer h2 {
     color: black;
@@ -796,4 +795,42 @@ iframe {
 }
 div .infoContainer a {
     font-weight: 800;
+}
+.btnOrderAgain {
+    margin: 1rem;
+    font-weight: 900;
+    font-size: 1.3rem;
+    background-color: var(--sixth-color);
+    color: var(--first-color);
+    padding: .5rem .5rem;
+    cursor: pointer;
+    border: 2px solid var(--first-color);
+    border-radius: 1rem;
+    transition: all ease-in .5s;
+    max-width: 15rem;
+    text-align: center;
+}
+.btnOrderAgain:hover {
+    transform: scale(1.005);
+    transition: all ease-in .2s;
+    background-color: var(--first-color);
+    color: var(--sixth-color);
+    border: solid 1px var(--sixth-color);
+    transform: scale(1.05);
+}
+.btnBuyAgainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; padding: 0;
+}
+.mainform{
+    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mainform > * {
+    width: 100%;
 }
