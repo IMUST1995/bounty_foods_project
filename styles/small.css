@@ -747,11 +747,53 @@ iframe {
     background-color: #F75C03;
 
 }
-.whyUs p {
+.whyUs p, .attributionContainer p, .attributionContainer2 p, .attributionContainer3 p {
     text-indent: 1rem;
     margin: 1rem 1rem 1rem 1rem;
     font-size: 1.3rem;
 }
 .infoOrder {
     text-align: center;
+}
+.attributionContainer {
+    background-color: var(--fourth-color);
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    box-shadow: 1px 1px 4px var(--fourth-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.attributionContainer p em, .attributionContainer2 p em {
+    font-weight: 800;
+}
+.attributionContainer2 {
+    background-color: var(--second-color);
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    box-shadow: 1px 1px 4px var(--second-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.attributionContainer3 {
+    background-color: var(--fifth-color);
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+    margin: 1rem;
+    box-shadow: 1px 1px 4px var(--fifth-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.attributionLink {
+    display: block;
+}
+div .infoContainer a {
+    font-weight: 800;
 }

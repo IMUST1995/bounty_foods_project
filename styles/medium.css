@@ -40,8 +40,8 @@
     }
     .heroContainer h2 {
         font-size: 2.5rem;
-        top: 6rem;
-        left: 2rem;
+        top: 8rem;
+        left: 4rem;
     }
     .iframeContainer {
         display: flex;
