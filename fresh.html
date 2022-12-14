@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="organic natural fruits fresh drinks">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lemonada:wght@300;400;500;600;700&family=Paprika&family=Sevillana&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>Bounty Foods</title>
+</head>
+<body>
+    <header>
+        <span id="banner"></span>
+        <div class="mainDivHeader">
+            <div class="logoContainer">
+                <a href="index.html">
+                    <img class="logo" src="images/bountyFoodsLogo.png" alt="logo DCC">
+                </a>
+            </div>
+            <nav>
+                <div class="smallHead" id="Title">
+                    <h1>Bounty Foods</h1>
+                    
+                </div>
+                <ul class="smallMenu displayNone">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="fresh.html">Fresh</a>
+                    </li>
+                    <li>
+                        <a href="Aboutus.html">About Us</a>
+                    </li>
+                </ul>
+                <div class="iconsContainer">
+                    <div class="socialMediaContainerIcons">
+                        <a href="https://facebook.com/" target="_blank">
+                            <img class="iconMedia" src="images/iconsMedia/facebook.svg" alt="facebook.com">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img class="iconMedia" src="images/iconsMedia/instagram.svg" alt="instagram.com">
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank">
+                            <img class="iconMedia" src="images/iconsMedia/twitter.svg" alt="facebook.com">
+                        </a>
+                    </div>
+                    <div class="iconContainer">
+                        <span class="icon">&#9776;</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="mainform">
+        <form 
+        method="get"
+        >
+            <fieldset>
+                <Legend>Order Now</Legend>
+                <label for="fname">First name*:
+                    <input 
+                        type="text" 
+                        id="fname" 
+                        name="fname" 
+                        pattern="^[A-Za-z]*$"
+                        required
+                        >
+                </label>
+                <label for="email">E-mail*
+                    <input 
+                        id="email"
+                        type="email" 
+                        placeholder="username@email.com"
+                        required>
+                </label>
+                <label for="phone">Enter your phone number*:
+                    <input type="tel" 
+                        id="phone"
+                        name="phone"
+                        minlength="7"
+                        placeholder="720-555-5555"
+                        pattern="[0-9]{10}"
+                        title="Phone number must be ten characters"
+                        required
+                        >
+                </label>
+                <label for="fruits">Choose your fruits (3 suggested)
+                    <select class="fruits" name="fruits" id="fruits" required>
+                        <option value="Select " disabled selected>Select your fruits</option>
+                    </select>
+                </label>
+                <label class="textareaLabel" for="comments">Special Instructions (optional)</label>
+                    <textarea 
+                    id="comments"
+                    name="comments" 
+                    rows="4" 
+                    cols="30"
+                    ></textarea>
+                    <input 
+                    type="hidden" 
+                    name="time" 
+                    id="formDate">
+            </fieldset>
+        <input class="formButton" 
+                type='submit'
+                value="Order Now!">
+        </form>
+    </main>
+    <footer>
+        <div class="firstSectionFooter">
+            <div class="logoContainer">
+                <a href="index.html">
+                    <img class="logo" src="images/bountyFoodsLogo.png" alt="logo DCC">
+                </a>
+            </div>
+            <div class="infoContainer">
+                <div class="locationContainer">
+                    <div class="locationPinContainer">
+                        <a href="https://goo.gl/maps/Z3jpwBZwKWgsiq3dA">
+                            <img class="locationPin" src="images/pinLocation.webp" alt="location">
+                        </a>
+                    </div>
+                    <p>info@dcc.org +(720) 555-5555 662 Tamarack Ave Carlsbad CA</p>
+                </div>
+                <p id="currentDate"></p>
+                <a href="https://openweathermap.org/" target="_blank">Open Weather Map</a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/fresh.js"></script>
+</body>
+</html>

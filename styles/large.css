@@ -1,0 +1,76 @@
+@media (min-width: 60rem){
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Title{
+        display: block;
+    }
+    .smallMenu{
+        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        padding: 0;
+        margin: 1rem;
+    }
+    div.iconContainer{
+        display: none;
+    }
+    /* -------Form styles.------- */
+    form{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    form fieldset{
+        width: 40vw;
+    }
+    .welcomeh2{
+        position: absolute;
+        bottom: 10rem;
+        right: 5rem;
+        margin-left: 3rem;
+        font-size: 2rem;
+    }
+    .iframeContainer {
+        max-width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .iframeContainer iframe {
+        width: 100%;
+    }
+    .mainContactPage {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+    .aboutUsContainer {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .contactInformationContainer {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .whyUs {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    .heroContainer h2 {
+        top: 10rem;
+        left: 10rem;
+        font-size: 3rem;
+    }
+}
