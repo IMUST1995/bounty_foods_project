@@ -96,4 +96,18 @@
     .mainform > * {
         width: 50%;
     }
+    div.carousel div img{
+        width: 40%;
+    }
+    #mainHome{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    .heroContainer {
+
+    }
+    .infoCostalContainer {
+        
+    }
 }
