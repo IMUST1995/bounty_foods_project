@@ -1,5 +1,7 @@
 /* __________________form section _______________ */
 const fruitsSelectionContainer = document.querySelector('.fruits')
+const fruitsSelectionContainer2 = document.querySelector('.fruits2')
+const fruitsSelectionContainer3 = document.querySelector('.fruits3')
 const URL = `https://brotherblazzard.github.io/canvas-content/fruit.json`
 let cart = []
 const mainContainer = document.querySelector('.mainform')
@@ -17,13 +19,18 @@ function displaySelectMenu(data) {
     data.forEach(fruit => {
         let optionHTML =  `<option value="${fruit.name}">${fruit.name}</option>`
         fruitsSelectionContainer.innerHTML += optionHTML;
+        let optionHTML2 =  `<option value="${fruit.name}">${fruit.name}</option>`
+        fruitsSelectionContainer2.innerHTML += optionHTML2;
+        let optionHTML3 =  `<option value="${fruit.name}">${fruit.name}</option>`
+        fruitsSelectionContainer3.innerHTML += optionHTML3;
     });
     displayFruitsSelected(data)
 }
 
-
 function displayFruitsSelected(data) {
-    fruitsSelectionContainer.addEventListener('input', e => {
+    const selectInputs = document.querySelectorAll('select')
+    selectInputs.forEach(select => {
+        select.addEventListener('input', e => {
         e.preventDefault()
         cart.push(e.target.value)
         
@@ -70,11 +77,13 @@ function displayFruitsSelected(data) {
             addTotal(fruitsSelected)
         })
     })
+})
 }
 
 
 const totals = document.createElement('tr')
 totals.setAttribute('class', 'totalTable')
+
 function addTotal(fruitsSelected) {
     let totalFat = fruitsSelected.reduce((total, fruit) => total + fruit.nutritions.fat, 0);
 
