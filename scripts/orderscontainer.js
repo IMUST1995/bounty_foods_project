@@ -30,5 +30,5 @@ function displayOrdersCard() {
             <h2>20% off in the first Order!</h2>
         `
     }
-    console.log(ordersContainer)
+
 }
