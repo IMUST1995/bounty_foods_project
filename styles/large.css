@@ -102,17 +102,6 @@
     #mainHome{
         display: grid;
         grid-template-columns: auto auto;
-<<<<<<< HEAD
-        grid-template-rows: auto auto auto;
-    }
-    .heroContainer {
-
-    }
-    .infoCostalContainer {
-        
-    }
-=======
-        grid-template-rows: auto auto auto auto;
     }
     .heroContainer {
         grid-column: 1 / 3;
@@ -142,5 +131,4 @@
         grid-column: 2 / 3;
         grid-row: 4 / 5;
     }
->>>>>>> 63cbd13 (images path, adding select inputs)
 }
