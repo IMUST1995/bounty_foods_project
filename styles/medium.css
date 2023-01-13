@@ -1,0 +1,52 @@
+@media(min-width: 35rem){
+    nav h1 {
+        font-size: 2rem;
+    }
+    nav {
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    div .weatherImgContainer img{
+        max-width: 8rem;
+    }
+    #mainHome {
+        display: grid; 
+        grid-template-columns: repeat(2, 50%); 
+        grid-template-rows: repeat(6, auto);
+    }
+    .heroContainer {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .infoCostalContainer {
+        grid-column: 1 /3;
+        grid-row: 2 / 3;
+    }
+    .ourProductsContainer{
+        grid-column: 1 /3;
+        grid-row: 3 / 4;
+    }
+    .carousel {
+        grid-column: 1 /3;
+        grid-row: 4 / 5;
+    }
+    .weatherContainer {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    .ordersContainer {
+        grid-column: 2 /3;
+        grid-row: 5 / 6;
+    }
+    .heroContainer h2 {
+        font-size: 2.5rem;
+        top: 8rem;
+        left: 4rem;
+    }
+    .iframeContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+}

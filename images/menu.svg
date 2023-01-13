@@ -1,0 +1,15 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icons/Menu">
+<path id="Combined Shape" fill-rule="evenodd" clip-rule="evenodd" d="M4.5 10.5C3.67157 10.5 3 9.82843 3 9C3 8.17157 3.67157 7.5 4.5 7.5H31.5C32.3284 7.5 33 8.17157 33 9C33 9.82843 32.3284 10.5 31.5 10.5H4.5ZM4.5 19.5C3.67157 19.5 3 18.8284 3 18C3 17.1716 3.67157 16.5 4.5 16.5H31.5C32.3284 16.5 33 17.1716 33 18C33 18.8284 32.3284 19.5 31.5 19.5H4.5ZM3 27C3 27.8284 3.67157 28.5 4.5 28.5H31.5C32.3284 28.5 33 27.8284 33 27C33 26.1716 32.3284 25.5 31.5 25.5H4.5C3.67157 25.5 3 26.1716 3 27Z" fill="black"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="7" width="30" height="22">
+<path id="Combined Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M4.5 10.5C3.67157 10.5 3 9.82843 3 9C3 8.17157 3.67157 7.5 4.5 7.5H31.5C32.3284 7.5 33 8.17157 33 9C33 9.82843 32.3284 10.5 31.5 10.5H4.5ZM4.5 19.5C3.67157 19.5 3 18.8284 3 18C3 17.1716 3.67157 16.5 4.5 16.5H31.5C32.3284 16.5 33 17.1716 33 18C33 18.8284 32.3284 19.5 31.5 19.5H4.5ZM3 27C3 27.8284 3.67157 28.5 4.5 28.5H31.5C32.3284 28.5 33 27.8284 33 27C33 26.1716 32.3284 25.5 31.5 25.5H4.5C3.67157 25.5 3 26.1716 3 27Z" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<g id="Colors/Icons/White Icon">
+<g id="White Icon">
+<rect id="Rectangle" width="36" height="36" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
